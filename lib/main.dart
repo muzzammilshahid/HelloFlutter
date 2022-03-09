@@ -17,23 +17,40 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.end,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Text("Hello Flutter"),
-          OutlinedButton(
-            style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.amber),
-                foregroundColor: MaterialStateProperty.all(Colors.white)),
-            onPressed: () {},
-            child: Text("click me"),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              Container(
+                padding: EdgeInsets.all(20.0),
+                color: Colors.amber,
+                child: Text("one"),
+              ),
+              Container(
+                padding: EdgeInsets.all(20.0),
+                color: Colors.green,
+                child: Text("one"),
+              ),
+            ],
           ),
           Container(
-            color: Colors.grey,
             padding: EdgeInsets.all(20.0),
-            margin: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
-            child: Text("container"),
+            color: Colors.amber,
+            child: Text("one"),
+          ),
+          Container(
+            padding: EdgeInsets.all(30.0),
+            color: Colors.green,
+            child: Text("one"),
+          ),
+          Container(
+            padding: EdgeInsets.all(40.0),
+            color: Colors.red,
+            child: Text("one"),
           )
         ],
       ),
