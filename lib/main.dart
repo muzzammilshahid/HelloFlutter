@@ -17,16 +17,11 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Center(
-        child: OutlinedButton.icon(
-          style: ButtonStyle(
-            foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
-            backgroundColor: MaterialStateProperty.all<Color>(Colors.amber),
-          ),
-          onPressed: () {},
-          icon: Icon(Icons.attach_email),
-          label: Text('email'),
-        ),
+      body: Container(
+        color: Colors.grey,
+        padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 10.0),
+        child: Text('Title'),
+        margin: EdgeInsets.all(20.0),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
